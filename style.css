@@ -1,3 +1,28 @@
 * {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100dvh; /*ou um % bastava pro pensamento */
+}
+
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff); /*da um 3d na tela*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 38px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden; /*Esconde qualquer conteúdo que “vaza” fora do tamanho do elemento. por ex. o cont ficou dentro da borda e n ficou mais vazando pra fora*/
+    width: ;
 }
