@@ -6,12 +6,11 @@
 }
 
 html, body {
-    height: 100dvh; /*ou um % bastava pro pensamento */
+    height: 100dvh; /*ou um % bastava pro que precisava */
 }
 
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #9de0ef, #c9d6ff); /*da um 3d na tela*/
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc); /*da um 3d na tela*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,6 +49,7 @@ body{
 }
 
 .container button {
+    background: linear-gradient(to right, #667eea, #764ba2);
     background-color: #512da8;
     color: white;
     font-size: 18px;
@@ -59,6 +59,7 @@ body{
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.4);
     margin-top: 10px;
     cursor: pointer;
 
@@ -80,6 +81,8 @@ body{
 .container button:hover {
     animation: shimmer 1s forwards;
     transform: scale(1.1);
+
+    box-shadow: 0 6px 20px rgba(118, 75, 162, 0.6);
 }
 
 
@@ -197,7 +200,7 @@ input:focus::placeholder {
 .toggle{
     background-color: #512da8;
     height: 100%;
-    background: linear-gradient(to right, #d1bffd, #2d50a8);
+     background: linear-gradient(to right, #667eea, #764ba2);
     color: #fff;
     position: relative;
     left: -100%;
