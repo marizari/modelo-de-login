@@ -74,16 +74,27 @@ body{
 }
 
 .container input{
-    background-color: #eee;
+    display: block;
     border: none;
     margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 13px;
+    font-size: 16px;
     border-radius: 8px;
     width: 100%;
     outline: none;
+    border-bottom: 1px solid #515151;
+    padding: 10px 10px 10px 5px;
+    background: transparent;
 }
 
+
+input::placeholder {
+    color: #999;
+    transition: 0.3s;
+}
+
+input:focus::placeholder {
+    color: #7700ff;
+}
 .form-container{
     position: absolute;
     top: 0;
