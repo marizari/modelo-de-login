@@ -1,73 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Template</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
 </head>
+
 <body>
 
     <div class="container" id="container">
-
-
         <div class="form-container sign-up">
             <form>
                 <h1>Criar Conta</h1>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <span>ou use seu e-mail para registro!</span>
-                <input type="text" placeholder="Nome">
+                <span>ou use seu email para se registrar</span>
+                <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <button>Inscreva-se</button>
+                <input type="password" placeholder="Password">
+                <button>Entar</button>
             </form>
         </div>
-
-    <div class="form-container sign-in">
-        <form>
-            <h1>Entrar</h1>
-            <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Entrar</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use sua senha de email</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Esqueceu sua senha?</a>
+                <button>Entrar</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem vindo(a)!</h1>
+                    <p>Insira seus dados pessoais para usar todos os recursos do site</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Olá, Amigo(a)!</h1>
+                    <p>Cadastre-se com seus dados pessoais para usar todos os recursos do site</p>
+                    <button class="hidden" id="register">Inscreva-se!</button>
+                </div>
             </div>
-            <span>ou use sua senha e e-mail</span>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Senha">
-            <a href="#">Esqueceu sua senha?</a>
-            <button>Entrar</button>
-        </form>
-    </div>
-    
-    <div class="toggle-container">
-        <div class="toggle">
-        <div class="toggle-container togle-left">
-            <h1>Bem-vindo(a)!</h1>
-                <p>
-                    Insira seus dados pessoais para usar todos os recursos do site
-                </p>
-                <button class="hidden" id="login">Entrar</button>
-        </div>
-        <div class="toggle-panel toggle-right">
-            <h1>Olá, Amigo(a)!</h1>
-            <p>Registre-se com seus dados pessoais para usar todos os recursos</p>
-            <button class="hidden" id="register">Inscreva-se!</button>
         </div>
     </div>
-</div>
 
-</div> 
-
-    <script src="script.js"></script>    
+    <script src="script.js"></script>
 </body>
+
 </html>
