@@ -5,9 +5,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html, body {
+    height: 100dvh; /*ou um % bastava pro pensamento */
+}
+
 body{
     background-color: #c9d6ff;
-    background: linear-gradient(to right, #9de0ef, #c9d6ff);
+    background: linear-gradient(to right, #9de0ef, #c9d6ff); /*da um 3d na tela*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +24,7 @@ body{
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
-    overflow: hidden;
+    overflow: hidden;/*Esconde qualquer conteúdo que “vaza” fora do tamanho do elemento. por ex. o cont ficou dentro da borda e n ficou mais vazando pra fora*/
     width: 768px;
     max-width: 100%;
     min-height: 480px;
@@ -45,10 +49,10 @@ body{
     margin: 15px 0 10px;
 }
 
-.container button{
+.container button {
     background-color: #512da8;
     color: white;
-    font-size: 12px;
+    font-size: 18px;
     padding: 10px 45px;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -57,12 +61,43 @@ body{
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+
+    background-image: linear-gradient(
+        -60deg,
+        #ffffff00 0%,
+        #ffffff00 40%,
+        #ffffff44 40%,
+        #ffffff44 60%,
+        #ffffff00 60%,
+        #ffffff00 100%
+    );
+    background-size: 200% 100%;
+    background-position-x: 150%;
+    transition: background-position-x 1s ease, transform 0.3s ease;
 }
 
-.container button.hidden{
+
+.container button:hover {
+    animation: shimmer 1s forwards;
+    transform: scale(1.1);
+}
+
+
+@keyframes shimmer {
+    0% {
+        background-position-x: 150%;
+    }
+    100% {
+        background-position-x: -50%;
+    }
+}
+
+
+.container button.hidden {
     background-color: transparent;
     border-color: #fff;
 }
+
 
 .container form{
     background-color: #fff;
@@ -107,6 +142,10 @@ input:focus::placeholder {
     left: 0;
     width: 50%;
     z-index: 2;
+}
+
+#foreach {
+    font-size: 15px;
 }
 
 .container.active .sign-in{
