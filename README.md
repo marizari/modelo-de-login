@@ -5,7 +5,6 @@
 <p align="center">
  Este projeto é um <strong>modelo de página de login e cadastro</strong> interativo, desenvolvido para aprimorar habilidades em animações e interações (HTML, CSS e JavaScript). 
  É uma base moderna e responsiva, perfeita para estudos e prática. Que também pode servir de inspiração p/ futuros projetos. </p>
-<br>
 
  ---
 
